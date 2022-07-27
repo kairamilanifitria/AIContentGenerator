@@ -1,0 +1,424 @@
+{% extends 'includes/layout.html' %}
+
+
+
+
+{% block body %}
+
+
+
+<!-- End of Desktop Navigation -->
+
+<header class="hero-container">
+  <div class="left">
+    <p>Welcome To</p>
+    <h1><span class="gt">AI Caption Generator</span></h1>
+    <a href="#testimonials" class="btn">Get Started</a>
+    <a href="#projects" class="btn cyan">Learn More</a>
+  </div>
+
+  <div class="right">
+    <img src="{{ url_for('static', filename='images/HeroImage.svg') }}" alt="" />
+  </div>
+
+  <img class="hero-bg" src="{{ url_for('static', filename='images/HeroBg.svg') }}" alt="" />
+
+  <div class="polygon-container">
+    <img class="polygon" src="{{ url_for('static', filename='images/Polygon.svg') }}" alt="" />
+    <img class="polygon2" src="{{ url_for('static', filename='images/Polygon2.svg') }}" alt="" />
+    <img class="polygon3" src="{{ url_for('static', filename='images/Polygon3.svg') }}" alt="" />
+  </div>
+</header>
+<!-- End of Hero Section -->
+
+</div>
+
+<div class="wrapper">
+  <section id="aboutprojects" class="about-projectssection">
+    <h2>About Projects</h2>
+    <div class="section-projectscontent">
+      <div class="about-projectsdescription">
+        <p>
+          This website uses artificial intelligence to create high-quality, unique content based on keywords
+          or phrases entered by a user. With minimum human intervention, you can use it to create Product Descriptions,
+          Job Descriptions, Social Media Captions, Email Template, Advertisement, Business Idea Pitch, Youtube Ideas,
+          Video Description, AI Sentence, Paragraph Summary, Make a Key Points, and Keyword Extractor.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- End of About Section -->
+
+<section id="testimonials" class="testimonials-section">
+  <div class="wrapper">
+    <h2>Preview</h2>
+
+    <div class="testimonials-container">
+      <div class="testimonials">
+        <div class="testimonial">
+          <div class="slide-container">
+            <div class="content">
+              <p>
+                Generate product descriptions for any types of products, you can simply enter the product name and product description will be generated.
+              </p>
+              <div class="name">
+                <strong>PRODUCT DESCRIPTION</strong>
+              </div>
+            </div>
+
+            <img src="{{ url_for('static', filename='images/Testimonial1.png') }}" alt="" />
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="slide-container">
+            <div class="content">
+              <p>
+                Are you trying to come up with professional sounding job descriptions but have hit a writers block? Let this app help you along.
+              </p>
+              <div class="name">
+                <strong>JOB DESCRIPTION</strong>
+              </div>
+            </div>
+
+            <img src="{{ url_for('static', filename='images/Testimonial2.png') }}" alt="" />
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="slide-container">
+            <div class="content">
+              <p>
+                We can generate caption ideas for your online social media campaigns. Create endless unique tweet ideas, no more writers block.
+              </p>
+              <div class="name">
+                <strong>SOCIAL MEDIA CAPTIONS</strong>
+              </div>
+            </div>
+
+            <img src="{{ url_for('static', filename='images/Testimonial3.png') }}" alt="" />
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="slide-container">
+            <div class="content">
+              <p>
+                Email template is perfect for marketing agents or companies who need fresh ideas daily on cold email that is creates by AI.
+              </p>
+              <div class="name">
+                <strong>EMAIL TEMPLATE</strong>
+              </div>
+            </div>
+
+            <img src="{{ url_for('static', filename='images/Testimonial4.png') }}" alt="" />
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="slide-container">
+            <div class="content">
+              <p>
+                Looking for some creative social media advertisement ideas for your online campaigns on Facebook, Instagram, Twitter, or TikTok? We got you.
+              </p>
+              <div class="name">
+                <strong>ADVERTISEMENT</strong>
+              </div>
+            </div>
+
+            <img src="{{ url_for('static', filename='images/Testimonial5.png') }}" alt="" />
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="slide-container">
+            <div class="content">
+              <p>
+                We can create some ideas for a quick one paragraph pitch for your business idea, describe your idea and produce useful pitches.
+              </p>
+              <div class="name">
+                <strong>BUSINESS IDEA PITCH</strong>
+              </div>
+            </div>
+
+            <img src="{{ url_for('static', filename='images/Testimonial6.png') }}" alt="" />
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="slide-container">
+            <div class="content">
+              <p>
+                Want to get started on video recommendation but need some video ideas to start working on? Start generating some Youtube video ideas right away with AI.
+              </p>
+              <div class="name">
+                <strong>YOUTUBE IDEAS</strong>
+              </div>
+            </div>
+
+            <img src="{{ url_for('static', filename='images/Testimonial7.png') }}" alt="" />
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="slide-container">
+            <div class="content">
+              <p>
+                This AI tool will help you draft some cool video description based on a topic or your video idea. Just enter your video topic.
+              </p>
+              <div class="name">
+                <strong>VIDEO DESCRIPTION</strong>
+              </div>
+            </div>
+
+            <img src="{{ url_for('static', filename='images/Testimonial8.png') }}" alt="" />
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="slide-container">
+            <div class="content">
+              <p>
+                We can help you improve your writing quickly and easily by correcting the grammar of words that you submitted. Just write your sentence.
+              </p>
+              <div class="name">
+                <strong>AI SENTENCE CORRECTOR</strong>
+              </div>
+            </div>
+
+            <img src="{{ url_for('static', filename='images/Testimonial9.png') }}" alt="" />
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="slide-container">
+            <div class="content">
+              <p>
+                This app will help you to quickly summarize long passages of text and improve your writing skills. Paragraph summary designed to help you write better summaries by providing a framework and tips.
+              </p>
+              <div class="name">
+                <strong>PARAGRAPH SUMMARY</strong>
+              </div>
+            </div>
+
+            <img src="{{ url_for('static', filename='images/Testimonial10.png') }}" alt="" />
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="slide-container">
+            <div class="content">
+              <p>
+                Just drop the topic you want to know about, and we will provide a key point that will guide you for knowing more about the topic.
+              </p>
+              <div class="name">
+                <strong>KEY POINTS</strong>
+              </div>
+            </div>
+
+            <img src="{{ url_for('static', filename='images/Testimonial11.png') }}" alt="" />
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="slide-container">
+            <div class="content">
+              <p>
+                We can extract keywords from a block of text you submitted. Keyword Extractor picks keywords from the text and generate related keywords which can be helpful for creating search indexes.
+              </p>
+              <div class="name"><strong>KEYWORD EXTRACTOR</strong></div>
+            </div>
+
+            <img src="{{ url_for('static', filename='images/Testimonial12.png') }}" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <span class="slider-prev"><img src="{{ url_for('static', filename='images/LeftArrow.svg') }}" alt="" /></span>
+
+      <span class="slider-next"><img src="{{ url_for('static', filename='images/RightArrow.svg') }}" alt="" /></span>
+
+      <div role="tablist" class="dots-container">
+        <div class="dots"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of Testimonials Section -->
+
+<div class="wrapper">
+  <section id="projects" class="project-section">
+    <h2>Features</h2>
+
+    <div class="projects-gallery">
+      <div class="wrapped">
+        <a href="/product-description"><img src="{{ url_for('static', filename='images/Project1.png') }}" alt="" /></a>
+        <div class="name">
+          <center><strong><a href="/product-description"><h1>Product Descriptions</h1></a></strong></center>
+        </div>
+      </div>
+
+      <div class="wrapped">
+        <a href="/job-description"><img src="{{ url_for('static', filename='images/Project2.png') }}" alt="" /></a>
+        <div class="name">
+          <center><strong><a href="/job-description"><h1>Job Descriptions</h1></a></strong></center>
+        </div>
+      </div>
+
+      <div class="wrapped">
+        <a href="/tweet-ideas"><img src="{{ url_for('static', filename='images/Project3.png') }}" alt="" /></a>
+        <div class="name">
+          <center><strong><a href="/tweet-ideas"><h1>Social Media Captions</h1></a></strong></center>
+        </div>
+      </div>
+
+      <div class="wrapped">
+        <a href="/cold-emails"><img src="{{ url_for('static', filename='images/Project4.png') }}" alt="" /></a>
+        <div class="name">
+          <center><strong><a href="/cold-emails"><h1>Email Template</h1></a></strong></center>
+        </div>
+      </div>
+
+      <div class="wrapped">
+        <a href="/social-media"><img src="{{ url_for('static', filename='images/Project5.png') }}" alt="" /></a>
+        <div class="name">
+          <center><strong><a href="/social-media"><h1>Advertisement</h1></a></strong></center>
+        </div>
+      </div>
+
+      <div class="wrapped">
+        <a href="/business-pitch"><img src="{{ url_for('static', filename='images/Project6.png') }}" alt="" /></a>
+        <div class="name">
+          <center><strong><a href="/business-pitch"><h1>Business Pitch</h1></a></strong></center>
+        </div>
+      </div>
+
+      <div class="wrapped">
+        <a href="/video-ideas"><img src="{{ url_for('static', filename='images/Project7.png') }}" alt="" /></a>
+        <div class="name">
+          <center><strong><a href="/video-ideas"><h1>Youtube Idea</h1></a></strong></center>
+        </div>
+      </div>
+
+      <div class="wrapped">
+        <a href="/video-description"><img src="{{ url_for('static', filename='images/Project8.png') }}" alt="" /></a>
+        <div class="name">
+          <center><strong><a href="/video-description"><h1>Video Description</h1></a></strong></center>
+        </div>
+      </div>
+
+      <div class="wrapped">
+        <a href="/ai-sentence"><img src="{{ url_for('static', filename='images/Project9.png') }}" alt="" /></a>
+        <div class="name">
+          <center><strong><a href="/ai-sentence"><h1>AI Sentence</h1></a></strong></center>
+        </div>
+      </div>
+
+      <div class="wrapped">
+        <a href="/paragraph-summary"><img src="{{ url_for('static', filename='images/Project10.png') }}" alt="" /></a>
+        <div class="name">
+          <center><strong><a href="/paragraph-summary"><h1>Paragraph Summary</h1></a></strong></center>
+        </div>
+      </div>
+
+      <div class="wrapped">
+        <a href="/key-points"><img src="{{ url_for('static', filename='images/Project11.png') }}" alt="" /></a>
+        <div class="name">
+          <center><strong><a href="/key-points"><h1>Key Points</h1></a></strong></center>
+        </div>
+      </div>
+
+      <div class="wrapped">
+        <a href="/keyword-extractor"><img src="{{ url_for('static', filename='images/Project12.png') }}" alt="" /></a>
+        <div class="name">
+          <center><strong><a href="/keyword-extractor"><h1>Keyword Extractor</h1></a></strong></center>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Projects Section -->
+
+</div>
+
+<div class="wrapper">
+  <section id="about" class="about-section">
+    <h2>About Creator</h2>
+    <div class="section-content">
+      <div class="about-description">
+        <p>
+          Hello! I'm Kaira Milani Fitria and i create this site also designed the website appearance. I'm currently in my final semester period in Electrical Engineering University of Lampung. I'm interested to programming, machine learning, and data analytics. I aim to reach my creative goals one step at a time and i believe in doing everything with a smile. You can also find me on Twitter
+          <a href="https://twitter.com/kairajpg/">@kairajpg</a>
+        </p>
+      </div>
+
+      <img src="{{ url_for('static', filename='images/About.png') }}" alt="" />
+    </div>
+  </section>
+</div>
+
+<!-- End of About Us Section -->
+
+
+<footer>
+  <div class="wrapper">
+    <div class="footer-container">
+      <div class="logo">
+        <img src="{{ url_for('static', filename='images/Logo-Light.svg') }}" alt="" />
+      </div>
+
+      <div class="footer-nav">
+        <ul>
+          <li><a href="/product-description">Product Descriptions</a></li>
+          <li><a href="/job-description">Job Descriptions</a></li>
+          <li><a href="/tweet-ideas">Social Media Captions</a></li>
+          <li><a href="/cold-emails">Email Template</a></li>
+          <li><a href="/social-media">Advertisement</a></li>
+          <li><a href="/business-pitch">Business Pitch</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav">
+        <ul>
+          <li><a href="/video-ideas">Youtube Ideas</a></li>
+          <li><a href="/video-description">Video Description</a></li>
+          <li><a href="/ai-sentence">AI Sentence</a></li>
+          <li><a href="/paragraph-summary">Paragraph Summary</a></li>
+          <li><a href="/key-points">Key Points</a></li>
+          <li><a href="/keyword-extractor">Keyword Extractor</a></li>
+        </ul>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="wrapper">
+
+    <body>
+      <center>
+        <p class="copyright">
+        <div class="footer-nav">
+          <h3>Get Social</h3>
+          <p> </p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/kairamilanifitria/">
+              <img src="{{ url_for('static', filename='images/FacebookLogo.png') }}" alt="" />
+            </a>
+
+            <a href="https://github.com/kairamilanifitria">
+              <img src="{{ url_for('static', filename='images/InstagramLogo.png') }}" alt="" />
+            </a>
+
+          </div>
+          <p> </p>
+          <p>kairaamilanii@gmail.com</p>
+        </div>
+        This website was designed by Kaira Milani Fitria &copy; 2022
+        </p>
+      </center>
+    </body>
+  </div>
+  <!-- End of the Footer -->
+
+  {% endblock %}

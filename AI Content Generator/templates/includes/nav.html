@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Caption Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='glider.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="desktop-nav">
+            <div class="logo">
+                <a href="/">
+                    <img src="{{ url_for('static', filename='images/Logo.svg') }}" alt="" />
+                </a>
+            </div>
+            <ul class="menu-items">
+                <li>
+                    <a href="/" class="btn">Back to Menu</a>
+                </li>
+            </ul>
+        </nav>
+
+        {% block body %}
+        {% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'includes/nav.html' %}
+
+
+{% block body %}
+
+<!-- End of Desktop Navigation -->
+
+<header class="hero-container">
+  <div class="left">
+    <h1><span class="gt">AI Email Template</span></h1>
+    <h2><span class="gt">Write your email idea</span></h2>
+    <form class="" action="/cold-emails" method="post">
+      <div>
+        <input type="text" class="form-control" name="coldEmails" placeholder="eg. Cloud Service" size="70">
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+    </form>
+  </div>
+
+  <div class="right">
+    <img src="{{ url_for('static', filename='images/4.png') }}" alt="" />
+  </div>
+  <img class="hero-bg" src="{{ url_for('static', filename='images/HeroBG.svg') }}" alt="" />
+</header>
+</div>
+
+<div class="wrapper">
+  <section id="result" class="about-section">
+    <p><h2>{{prompt|safe}}</h2></p>
+    <div class="section-content">
+      <p><h1>{{openAIAnswer|safe}}</h1></p>
+      <!-- <h3>{{prompt}}</h3> -->
+    </div>
+  </section>
+</div>
+</body>
+
+</html>
+
+{% endblock %}

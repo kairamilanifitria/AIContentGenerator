@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Caption Generator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='glider.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="mobile-nav">
+        <ul class="menu-items">
+          <li>
+            <a href="#aboutprojects">About</a>
+          </li>
+
+          <li>
+            <a href="#testimonials">Preview</a>
+          </li>
+
+          <li>
+            <a href="#projects">Features</a>
+          </li>
+
+          <li>
+            <a href="#about">About Creator</a>
+          </li>
+        </ul>
+      </div>
+
+      <nav class="desktop-nav">
+        <div class="logo">
+          <a href="#">
+            <img src="{{ url_for('static', filename='images/Logo.svg') }}" alt="" />
+          </a>
+        </div>
+
+        <div class="menu-icon">
+          <img src="{{ url_for('static', filename='images/MenuIcon.svg') }}" alt="" />
+        </div>
+
+        <ul class="menu-items">
+          <li>
+            <a href="#aboutprojects" class="active">About</a>
+          </li>
+
+          <li>
+            <a href="#testimonials">Preview</a>
+          </li>
+
+          <li>
+            <a href="#projects">Features</a>
+          </li>
+
+          <li>
+            <a href="#about">About Creator</a>
+          </li>
+
+          <li>
+            <a href="#testimonials" class="btn">Get Started</a>
+          </li>
+        </ul>
+      </nav>
+
+      {% block body %}
+      {% endblock %}
+
+      <script src="{{ url_for('static', filename='glider.min.js') }}"></script>
+
+    <script>
+      new Glider(document.querySelector(".testimonials"), {
+        slidesToShow: 1,
+        dots: ".dots",
+        arrows: {
+          prev: ".slider-prev",
+          next: ".slider-next",
+        },
+      });
+    </script>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+  </body>
+</html>
